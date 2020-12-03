@@ -77,3 +77,23 @@ VALUES
 
 SELECT * FROM Account
 
+
+CREATE PROC USP_GetAccountByUserName
+@userName nvarchar(100)
+AS
+BEGIN
+	SELECT * FROM Account WHERE UserName = @userName
+END
+GO
+
+EXEC dbo.USP_GetAccountByUserName @userName = N'THIHA'
+
+SELECT * FROM Account WHERE UserName = N'THIHA' AND PassWord = N'20102000'
+
+CREATE PROC USP_Login
+@userName nvarchar(100), @passWord nvarchar(100)
+AS
+BEGIN
+	SELECT * FROM Account WHERE UserName = @userName AND PassWord = @passWord
+END
+GO

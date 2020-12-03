@@ -17,18 +17,8 @@ namespace QuanLyQuanCafe
 		public frmAdmin()
 		{
 			InitializeComponent();
-			LoadAccountList();
 		}
 	    
-		void LoadAccountList()
-		{
-
-			string query = "SELECT DisplayName as [Tên hiển thị] FROM Account";
-
-			DataProvider provider = new DataProvider();
-			dtgvAccount.DataSource = provider.ExecuteQuery(query);
-
-
-		}
+		
 	}
 }
