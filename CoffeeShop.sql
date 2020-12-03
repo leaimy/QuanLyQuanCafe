@@ -1,7 +1,7 @@
-﻿CREATE DATABASE CoffeeShop
+﻿CREATE DATABASE QLQuanCafe
 GO
 
-USE CoffeeShop
+USE QLQuanCafe
 GO
 
 -- Food
@@ -69,4 +69,11 @@ CREATE TABLE BillInfo
 	FOREIGN KEY (idFood) REFERENCES Food(id)
 )
 GO
+
+INSERT INTO Account ( UserName, DisplayName, PassWord, Type)
+VALUES 
+	(N'THIHA', N'Nguyễn Thị Hà',N'20102000', 1),
+	(N'AIMY', N'Lệ Ái Mỹ',N'1812751', 0)
+
+SELECT * FROM Account
 

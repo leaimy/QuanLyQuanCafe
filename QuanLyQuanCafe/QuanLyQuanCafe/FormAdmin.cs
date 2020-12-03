@@ -1,7 +1,9 @@
-﻿using System;
+﻿using QuanLyQuanCafe.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,7 +17,18 @@ namespace QuanLyQuanCafe
 		public frmAdmin()
 		{
 			InitializeComponent();
+			LoadAccountList();
 		}
+	    
+		void LoadAccountList()
+		{
 
+			string query = "SELECT DisplayName as [Tên hiển thị] FROM Account";
+
+			DataProvider provider = new DataProvider();
+			dtgvAccount.DataSource = provider.ExecuteQuery(query);
+
+
+		}
 	}
 }
