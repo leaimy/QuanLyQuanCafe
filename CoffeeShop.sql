@@ -97,3 +97,20 @@ BEGIN
 	SELECT * FROM Account WHERE UserName = @userName AND PassWord = @passWord
 END
 GO
+
+ DECLARE @i INT = 0
+
+ WHILE @i <= 10
+ BEGIN
+	INSERT TableFood (name) VALUES (N'Bàn ' + CAST(@i AS nvarchar(100)))
+	SET @i = @i + 1
+END
+GO
+
+CREATE PROC USP_GetTableList
+AS SELECT * FROM TableFood
+GO
+
+UPDATE TableFood SET status = N'Có người' WHERE id = 9
+UPDATE TableFood SET status = N'Có người' WHERE id = 15
+EXEC USP_GetTableList

@@ -101,8 +101,9 @@ namespace QuanLyQuanCafe
 			// 
 			// flpTable
 			// 
+			this.flpTable.AutoScroll = true;
 			this.flpTable.Location = new System.Drawing.Point(10, 26);
-			this.flpTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.flpTable.Margin = new System.Windows.Forms.Padding(2);
 			this.flpTable.Name = "flpTable";
 			this.flpTable.Size = new System.Drawing.Size(418, 519);
 			this.flpTable.TabIndex = 2;
@@ -114,7 +115,7 @@ namespace QuanLyQuanCafe
 			this.panel1.Controls.Add(this.cboFood);
 			this.panel1.Controls.Add(this.cboCategory);
 			this.panel1.Location = new System.Drawing.Point(432, 25);
-			this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.panel1.Margin = new System.Windows.Forms.Padding(2);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(350, 60);
 			this.panel1.TabIndex = 3;
@@ -123,7 +124,7 @@ namespace QuanLyQuanCafe
 			// 
 			this.btnAddFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnAddFood.Location = new System.Drawing.Point(183, 2);
-			this.btnAddFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnAddFood.Margin = new System.Windows.Forms.Padding(2);
 			this.btnAddFood.Name = "btnAddFood";
 			this.btnAddFood.Size = new System.Drawing.Size(86, 55);
 			this.btnAddFood.TabIndex = 4;
@@ -133,7 +134,7 @@ namespace QuanLyQuanCafe
 			// nmAmount
 			// 
 			this.nmAmount.Location = new System.Drawing.Point(289, 22);
-			this.nmAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.nmAmount.Margin = new System.Windows.Forms.Padding(2);
 			this.nmAmount.Minimum = new decimal(new int[] {
             100,
             0,
@@ -153,7 +154,7 @@ namespace QuanLyQuanCafe
 			// 
 			this.cboFood.FormattingEnabled = true;
 			this.cboFood.Location = new System.Drawing.Point(2, 38);
-			this.cboFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cboFood.Margin = new System.Windows.Forms.Padding(2);
 			this.cboFood.Name = "cboFood";
 			this.cboFood.Size = new System.Drawing.Size(161, 21);
 			this.cboFood.TabIndex = 2;
@@ -162,7 +163,7 @@ namespace QuanLyQuanCafe
 			// 
 			this.cboCategory.FormattingEnabled = true;
 			this.cboCategory.Location = new System.Drawing.Point(0, 1);
-			this.cboCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cboCategory.Margin = new System.Windows.Forms.Padding(2);
 			this.cboCategory.Name = "cboCategory";
 			this.cboCategory.Size = new System.Drawing.Size(161, 21);
 			this.cboCategory.TabIndex = 1;
@@ -171,7 +172,7 @@ namespace QuanLyQuanCafe
 			// 
 			this.panel2.Controls.Add(this.lvFood);
 			this.panel2.Location = new System.Drawing.Point(433, 101);
-			this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.panel2.Margin = new System.Windows.Forms.Padding(2);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(349, 370);
 			this.panel2.TabIndex = 4;
@@ -180,7 +181,7 @@ namespace QuanLyQuanCafe
 			// 
 			this.lvFood.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.lvFood.Location = new System.Drawing.Point(0, 0);
-			this.lvFood.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.lvFood.Margin = new System.Windows.Forms.Padding(2);
 			this.lvFood.Name = "lvFood";
 			this.lvFood.Size = new System.Drawing.Size(349, 370);
 			this.lvFood.TabIndex = 0;
@@ -194,7 +195,7 @@ namespace QuanLyQuanCafe
 			this.panel3.Controls.Add(this.btnDiscount);
 			this.panel3.Controls.Add(this.btnCheckout);
 			this.panel3.Location = new System.Drawing.Point(432, 487);
-			this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.panel3.Margin = new System.Windows.Forms.Padding(2);
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(350, 58);
 			this.panel3.TabIndex = 5;
@@ -203,7 +204,7 @@ namespace QuanLyQuanCafe
 			// 
 			this.cboSwitchTable.FormattingEnabled = true;
 			this.cboSwitchTable.Location = new System.Drawing.Point(0, 36);
-			this.cboSwitchTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.cboSwitchTable.Margin = new System.Windows.Forms.Padding(2);
 			this.cboSwitchTable.Name = "cboSwitchTable";
 			this.cboSwitchTable.Size = new System.Drawing.Size(87, 21);
 			this.cboSwitchTable.TabIndex = 5;
@@ -212,7 +213,7 @@ namespace QuanLyQuanCafe
 			// 
 			this.btnSwitchTable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnSwitchTable.Location = new System.Drawing.Point(0, 2);
-			this.btnSwitchTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnSwitchTable.Margin = new System.Windows.Forms.Padding(2);
 			this.btnSwitchTable.Name = "btnSwitchTable";
 			this.btnSwitchTable.Size = new System.Drawing.Size(86, 28);
 			this.btnSwitchTable.TabIndex = 4;
@@ -222,7 +223,7 @@ namespace QuanLyQuanCafe
 			// nmDiscount
 			// 
 			this.nmDiscount.Location = new System.Drawing.Point(125, 36);
-			this.nmDiscount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.nmDiscount.Margin = new System.Windows.Forms.Padding(2);
 			this.nmDiscount.Name = "nmDiscount";
 			this.nmDiscount.Size = new System.Drawing.Size(86, 20);
 			this.nmDiscount.TabIndex = 3;
@@ -232,7 +233,7 @@ namespace QuanLyQuanCafe
 			// 
 			this.btnDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnDiscount.Location = new System.Drawing.Point(125, 2);
-			this.btnDiscount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnDiscount.Margin = new System.Windows.Forms.Padding(2);
 			this.btnDiscount.Name = "btnDiscount";
 			this.btnDiscount.Size = new System.Drawing.Size(86, 28);
 			this.btnDiscount.TabIndex = 2;
@@ -243,7 +244,7 @@ namespace QuanLyQuanCafe
 			// 
 			this.btnCheckout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnCheckout.Location = new System.Drawing.Point(261, 2);
-			this.btnCheckout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.btnCheckout.Margin = new System.Windows.Forms.Padding(2);
 			this.btnCheckout.Name = "btnCheckout";
 			this.btnCheckout.Size = new System.Drawing.Size(86, 56);
 			this.btnCheckout.TabIndex = 1;
@@ -261,7 +262,7 @@ namespace QuanLyQuanCafe
 			this.Controls.Add(this.flpTable);
 			this.Controls.Add(this.menuStrip1);
 			this.MainMenuStrip = this.menuStrip1;
-			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "frmTableManager";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Phần mềm quản lý quán cafe";
